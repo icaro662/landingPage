@@ -1,0 +1,124 @@
+* { 
+    color: #fcffc1;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+html::-webkit-scrollbar {
+    display: none; 
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(./assets/sora-sagano-Dksk8szLRN0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    background-color: #272a29; 
+    border-top: 5px inset #1dad9b;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    position: static;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.mid-section {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.personal-info {
+    background-color: #272a29; 
+    border-top: 5px inset #1dad9b;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: calc(100% - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.personal-text {
+    flex: 1;
+}
+
+.techs {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    width: 180px;
+    min-height: 90px;
+    flex-shrink: 0;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.techs h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+}
+
+.projects {
+    background-color: #272a29;
+    border-top: 5px inset #1dad9b;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.more-about {
+    background-color: #272a29;
+    border-top: 5px inset #1dad9b;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
