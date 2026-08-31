@@ -59,25 +59,28 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-color: #121212;
+    overflow-x: hidden;
+    opacity: 0;
+    animation: fadeInBody 0.8s ease forwards;
 }
 
 main {
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-bottom: 20px;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
+    animation: fadeInUp 0.9s ease-out 0.15s both;
 }
 
 .personal-info {
     background-color: #272a29; 
     border-top: 5px groove #1dad9b;
     border-radius: 5px;
-    margin: 20px auto;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    width: calc(100% - 40px);
+    margin: 20px auto 0;
+    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -85,6 +88,7 @@ main {
     justify-content: space-between;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
+    gap: 18px;
 }
 
 .personal-text {
@@ -92,6 +96,7 @@ main {
     padding-right: 3px;
     border-right: 3px solid rgba(255, 255, 255, 0.15);
     width: 320px;
+    flex-shrink: 0;
 }
 
 .personal-text h1 {
@@ -172,7 +177,7 @@ main {
     display: flex;
     align-items: stretch;
     gap: 20px;
-    width: calc(100% - 40px);
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -402,10 +407,120 @@ footer p {
     text-transform: uppercase;
     background-color: black;
     width: fit-content;
-    margin: 0;
+    margin: 4px auto 0;
     padding: 0;
     font-size: 0.875rem;
     line-height: 1.5;
-    margin-left: 680px;
-    margin-top: 4px;
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .personal-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .personal-text {
+        width: 100%;
+        max-width: 420px;
+        border-right: none;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.15);
+        padding-right: 0;
+        padding-bottom: 12px;
+        text-align: center;
+    }
+
+    .personal-text h1,
+    .personal-text h2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .personal-desc {
+        text-align: center;
+    }
+
+    .techs {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .lower-section {
+        flex-direction: column;
+    }
+
+    .knowledge {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        padding: 0 12px;
+    }
+
+    .personal-info,
+    .projects,
+    .personal-projects,
+    .knowledge {
+        padding: 16px;
+    }
+
+    .personal-info {
+        gap: 12px;
+    }
+
+    .personal-desc {
+        font-size: 0.9rem;
+    }
+
+    .projects p,
+    .personal-projects li,
+    .knowledge li {
+        font-size: 0.75rem;
+    }
+
+    .tech-badge {
+        width: 22px;
+        height: 22px;
+    }
+
+    .tech-badge img {
+        width: 11px;
+        height: 11px;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    footer {
+        height: auto;
+        padding: 12px 10px 16px;
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        max-width: 1320px;
+    }
 }
