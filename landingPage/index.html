@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <title>Portfólio - Ícaro Sancho</title>
+    <title>Ícaro Sancho</title>
   </head>
 
   <body>
@@ -18,36 +18,110 @@
           <h2>Desenvolvedor Back-end</h2>
         </div>
 
+        <div class="personal-desc">
+          <p>
+            Desenvolvedor júnior com formação e experiência prática em Python, JavaScript, NestJS, FastAPI, banco de dados MySQL/PostgreSQL e Docker. 
+          </p>
+        </div>
+
         <div class="techs">
           <h3>Techs</h3>
+
+          <div class="tech-badges" aria-label="Tech stack badges">
+            <div class="tech-badge js" title="JavaScript"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" /></div>
+            <div class="tech-badge ts" title="TypeScript"><img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" /></div>
+            <div class="tech-badge nest" title="NestJS"><img src="https://cdn.simpleicons.org/nestjs" alt="NestJS" /></div>
+            <div class="tech-badge node" title="Node.js"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" /></div>
+            <div class="tech-badge python" title="Python"><img src="https://cdn.simpleicons.org/python" alt="Python" /></div>
+            <div class="tech-badge fastapi" title="FastAPI"><img src="https://cdn.simpleicons.org/fastapi" alt="FastAPI" /></div>
+            <div class="tech-badge mysql" title="MySQL"><img src="https://cdn.simpleicons.org/mysql/dolphin" alt="MySQL" /></div>
+            <div class="tech-badge postgres" title="PostgreSQL"><img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" /></div>
+            <div class="tech-badge docker" title="Docker"><img src="https://cdn.simpleicons.org/docker" alt="Docker" /></div>
+          </div>
         </div>
       </div>
 
-      <div class="more-about">
-        <h3>Sobre mim</h3>
-        <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel eros condimentum, rhoncus nibh a, interdum lacus. Nullam eget placerat mi, sed tristique lorem. Donec porta turpis mauris, vel vehicula est pretium eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In mi libero, laoreet non sollicitudin id, iaculis sit amet nulla. Praesent placerat mauris nibh, a congue nisl tristique eget. Cras fermentum sit amet orci nec tincidunt. Nunc tincidunt nibh et purus rutrum dictum. Quisque nec finibus leo.
+      <div class="lower-section">
+        <div class="left-column">
+          <div class="projects">
+            <h2>Projetos relevantes</h2>
+            <h3>Sistema de gestão de academia</h3>
+              <p>
+                Projeto integrador do Programa Bolsa Futuro Digital. Desenvolvi uma API Backend em JavaScript/NestJS e MySQL.
+                O sistema oferece uma plataforma completa de academia, com controle de acesso por perfil (Admin/Recepção, Professor e
+                Aluno), planos de exercícios, monitoramento de progressão e gamificação por pontos dos alunos.
+              </p>
+              <br><br>
+              <h3>Sistema de gerenciamento e monitoramento de gado</h3>
+              <p>
+                Startup da residência do BFD. Desenvolvi uma API Backend em Python/FastAPI e PostgreSQL. O sistema oferece uma plataforma útil para pecuaristas visualizarem e gerenciarem a qualquer momento e de forma fácil seu gado,
+                com informações analíticas e alertas de variação de peso, visualização por fazenda e pesagens automaticamente processadas a
+                partir de dimensões do gado capturadas por sensores/camêras.
+            </p>
+          </div>
 
-Sed porttitor ultricies leo eget malesuada. Pellentesque volutpat risus et iaculis rhoncus. Suspendisse rhoncus faucibus lectus eget mollis. Phasellus sit amet sapien non ipsum pretium efficitur ullamcorper ut magna. Vestibulum malesuada sem semper, laoreet eros mollis, sollicitudin ipsum. Pellentesque a auctor quam. Etiam sed nisi sed diam dapibus tempus. Aenean non turpis augue. Nam convallis mi eu nibh pretium molestie. Suspendisse eu arcu eu nibh porttitor consectetur. Curabitur in elit a diam consectetur convallis. Donec luctus, neque a venenatis semper, augue neque ultrices elit, quis vestibulum dui quam a erat. Aliquam erat volutpat. Vivamus dignissim egestas massa eget posuere. Vivamus libero urna, consequat et dolor ac, cursus tristique metus. Sed feugiat orci ac elementum pulvinar.
+          <div class="personal-projects">
+            <h2>Projetos pessoais</h2>
+            <ul>
+              <li>
+                <strong>L4RI</strong>
+                <span>Bot pessoal com funcionalidades voltadas a entretenimento geral feito para plataforma social Fluxer</span>
+              </li>
+              <li>
+                <strong>AAQT</strong>
+                <span>Aplicativo tracker do progresso de conquistas em um mundo, feito em C++/QT para Linux, inspirado em <a href="https://github.com/DarwinBaker">DarwinBaker's</a> AATool</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-Nunc quis ex sit amet nisl euismod pharetra. Maecenas sodales eros sem, in ultricies quam hendrerit ac. Donec ut est mauris. Curabitur et convallis quam. Maecenas eleifend nulla vel dolor sollicitudin, ac interdum purus auctor. In nec nibh sed enim luctus tempus. Nam efficitur sem nec massa luctus, ac mollis nisi pellentesque. In ultricies at tellus vitae ornare. Maecenas eget ultricies ipsum, a volutpat dui. Nam tincidunt, erat ut venenatis fringilla, nunc nisl consequat massa, id lobortis nibh massa nec turpis. Nullam ornare euismod est, non sagittis orci scelerisque mattis.
-
-Mauris aliquam sem sed blandit feugiat. Vivamus ac eros sed est tincidunt efficitur volutpat vitae lorem. Quisque molestie lacus sit amet erat tincidunt, vel eleifend libero tincidunt. Ut id lorem at tortor dignissim imperdiet. Ut tincidunt massa vel mauris efficitur, quis laoreet lorem varius. Vivamus eget orci ut nibh tempor eleifend. Nam sagittis, est eu finibus sagittis, diam quam venenatis nisl, eleifend sagittis quam urna non nunc. Sed sed convallis lacus, sed mattis urna. Maecenas porttitor, arcu quis vestibulum congue, ipsum ex aliquam elit, in sodales diam neque sed ipsum. Maecenas odio nibh, varius eu orci ut, sodales pellentesque felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in risus auctor, mattis arcu eget, pharetra massa. Morbi quis purus metus. Proin volutpat laoreet vulputate.
-
-Praesent non sem turpis. Ut nibh nunc, viverra ut semper id, semper at sapien. Pellentesque sit amet mattis neque. Nullam sollicitudin auctor turpis semper convallis. Etiam ornare tincidunt turpis, nec dapibus sem rutrum vitae. Pellentesque sit amet velit convallis, tincidunt elit nec, interdum nibh. Morbi ornare, erat vel scelerisque ultrices, enim massa pretium dui, ac auctor tortor lorem at mauris. 
-        </p>
-      </div>
-
-      <div class="mid-section">
-        <div class="projects">
-          <h1>Projetos</h1>
+        <div class="knowledge">
+          <h2>Formação</h2>
+          <ul>
+            <li>
+              <strong>Curso SENAI</strong> - Técnico de informática para internet com residência Porto Digital
+              <span>Em andamento (2026.2)</span>
+            </li>
+            <li>
+              <strong>Residência ArgusAI</strong> - Backend Python
+              <span>Concluído em junho de 2026</span>
+            </li>
+            <li>
+              <strong>Programa Bolsa Futuro Digital</strong> - Backend JavaScript
+              <span>Concluído em janeiro de 2026</span>
+            </li>
+            <li>
+              <strong>Universidade Federal de Pernambuco (UFPE)</strong>
+              <span>Bacharelado em Ciências Sociais - 5º período (Incompleto)</span>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
 
     <footer>
-      <a href="https://github.com/icaro662" target="_blank">LinkedIn</a>
-      <a href="https://github.com/icaro662" target="_blank">GitHub</a>
+      <div class="social-links">
+        <a href="https://github.com/icaro662" target="_blank" class="social-link github" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 0 0 8.21 11.39c.6.11.82-.26.82-.58 0-.28-.01-1.02-.02-2-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.84 1.23 1.84 1.23 1.08 1.84 2.81 1.31 3.49.99.11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.16 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.64.24 2.86.12 3.16.77.84 1.23 1.9 1.23 3.22 0 4.6-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0Z"/>
+          </svg>
+        </a>
+        <span class="social-dot" aria-hidden="true">•</span>
+        <a href="https://www.linkedin.com/in/%C3%ADcaro-sancho-4498b8271/" target="_blank" class="social-link linkedin" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+        <span class="social-dot" aria-hidden="true">•</span>
+        <a href="mailto:icarosancho@gmail.com" class="social-link gmail" aria-label="Email">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/gmail.svg" alt="Email" />
+        </a>
+        <span class="social-dot" aria-hidden="true">•</span>
+        <a href="tel:+81987969772" class="social-link phone" aria-label="Telefone">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.63 10.79a15.6 15.6 0 0 0 6.58 6.58l2.2-2.2a1.2 1.2 0 0 1 1.24-.29c1.36.45 2.82.69 4.31.69a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.71 22 2 13.29 2 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.49.24 2.95.69 4.31a1.2 1.2 0 0 1-.29 1.24l-2.27 2.23z"/>
+          </svg>
+        </a>
+      </div>
+      <p>© 2026 Ícaro Sancho</p>
     </footer>
   </body>
 </html>
