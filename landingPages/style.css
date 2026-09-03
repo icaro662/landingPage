@@ -168,7 +168,7 @@ main {
     opacity: 0.95;
 }
 
-.lower-section {
+.mid-section {
     display: flex;
     align-items: stretch;
     gap: 20px;
@@ -176,7 +176,7 @@ main {
     margin: 0 auto;
 }
 
-.left-column {
+.project-section {
     margin-top: 10px;
     display: flex;
     flex: 1;

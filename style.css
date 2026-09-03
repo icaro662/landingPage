@@ -79,8 +79,8 @@ main {
     background-color: #272a29; 
     border-top: 5px groove #1dad9b;
     border-radius: 5px;
-    margin: 20px auto 0;
-    width: 100%;
+    margin: 20px 128px 0;
+    width: auto;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -173,34 +173,50 @@ main {
     opacity: 0.95;
 }
 
-.lower-section {
+.mid-section {
     display: flex;
+    flex-direction: column;
     align-items: stretch;
-    gap: 20px;
     width: 100%;
     margin: 0 auto;
 }
-
-.left-column {
-    margin-top: 10px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .projects {
     background-color: var(--panel-bg);
     border-top: 5px groove var(--accent);
     border-radius: 5px;
     width: 100%;
     padding: 20px;
-    margin: 0;
+    margin: 30px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.projects h2 {
+    text-transform: uppercase;
+    width: fit-content; 
+    background: black;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.projects h3 {
+    text-transform: uppercase;
+    width: fit-content; 
+    margin: 5px;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.projects p {
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding: 0px;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .personal-projects {
@@ -209,7 +225,7 @@ main {
     border-radius: 5px;
     width: 100%;
     padding: 20px;
-    margin: 0;
+    margin: 30px 0;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
@@ -219,6 +235,25 @@ main {
     width: fit-content;
     background: black;
     margin: 0 0 12px;
+}
+
+.personal-projects h3 {
+    text-transform: uppercase;
+    width: fit-content; 
+    margin: 5px;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.personal-projects p {
+    color: var(--text);
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
 .personal-projects ul {
@@ -241,50 +276,13 @@ main {
     font-weight: 700;
 }
 
-.personal-projects span {
-    color: var(--muted);
-    font-weight: 400;
-}
-
-.projects h2 {
-    text-transform: uppercase;
-    width: fit-content; 
-    background: black;
-    margin: 0px;
-    margin-bottom: 15px;
-}
-
-.projects h3 {
-    text-transform: uppercase;
-    width: fit-content; 
-    margin: 5px;
-}
-
-.projects p {
-    margin: 10px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 0.8rem;
-    line-height: 1.5;
-}
-
-.projects h3 {
-    font-size: 0.85rem;
-}
-
-.personal-projects span {
-    color: #dfe0d0;
-}
-
 .knowledge {
     background-color: #272a29;
     border-top: 5px groove #1dad9b;
     border-radius: 5px;
-    width: 300px;
+    width: 100%;
     padding: 20px;
     margin: 0;
-    margin-top: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -299,30 +297,62 @@ main {
     margin: 0 0 12px;
 }
 
-.knowledge ul {
+.education-list  {
+    list-style: none;
+    padding-left: 0;
     margin: 0;
-    padding-left: 0px;
-    list-style: disc;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0px;
 }
 
-.knowledge li {
+.education-list li {
+    border-radius: 2px;
+    border-left: 3px solid #436d6d;
+    width: 65%;
+    height: fit-content;
     font-size: 0.8rem;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 8px;
+    margin-bottom: 15px;
+    padding: 8px;
+    position: relative;
 }
 
-.knowledge strong {
+.education-list strong {
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-.knowledge span {
-    color: #dcdcdc;
-    font-weight: 400;
+.abilities-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.abilities-list ul {
+    list-style-type: disc;
+}
+
+.abilities-list li {
+    border-left: 3px solid #436d6d;
+    border-radius: 2px;
+    width: 100%;
+    height: 20px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    gap: 0px;
+    padding: 8px;
+    position: relative;
 }
 
 .more-about {
@@ -464,7 +494,7 @@ footer p {
         max-width: 260px;
     }
 
-    .lower-section {
+    .mid-section {
         flex-direction: column;
     }
 
